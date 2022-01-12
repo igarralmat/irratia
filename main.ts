@@ -1,6 +1,18 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (1 == receivedNumber) {
         basic.showString("A")
+        basic.pause(1000)
+        basic.clearScreen()
+    }
+    if (2 == receivedNumber) {
+        basic.showString("B")
+        basic.pause(1000)
+        basic.clearScreen()
+    }
+    if (3 == receivedNumber) {
+        basic.showString("A+B")
+        basic.pause(1000)
+        basic.clearScreen()
     }
 })
 input.onButtonPressed(Button.A, function () {
